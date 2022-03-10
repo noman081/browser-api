@@ -12,8 +12,27 @@
 
 <body class="mt-5 container">
     <button class="btn btn-success mx-auto" onclick="usePrompt()">Use Prompt</button>
-    <button class="btn btn-danger mx-auto" onclick="useConfirm()">Use Prompt</button>
+    <button class="btn btn-danger mx-3" onclick="useConfirm()">Use Confirm</button>
+
+    <!-- product price -->
+    <div class="container mt-3">
+        <h3>Add Product</h3>
+        <input id="product-name" type="text" class="form-control w-50 mb-3" placeholder="Enter Product Name">
+        <input id="product-price" type="text" class="form-control w-50 mb-3" placeholder="Enter Product Price">
+        <button class="btn btn-outline-primary" onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div class="container mt-3">
+        <h3>Product List</h3>
+        <ul id="products">
+
+        </ul>
+    </div>
+
+
+
     <script src="js/app.js"></script>
+
 </body>
 
 </html>
