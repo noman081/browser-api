@@ -16,6 +16,7 @@ const addProduct = () => {
     const productPriceValue = document.getElementById('product-price');
     const productName = productNameValue.value;
     const productPrice = productPriceValue.value;
+    localStorage.setItem(productName, productPrice);
     productNameValue.value = '';
     productPriceValue.value = '';
     if (!productName || !productPrice) return;
